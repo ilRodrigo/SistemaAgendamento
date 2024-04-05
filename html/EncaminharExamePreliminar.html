@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pré exames</title>
+</head>
+<body class="flex flex-col justify-center items-center gap-5 w-screen h-screen bg-gray-200">
+    <section class="flex justify-between items-center w-full h-16 bg-blue-600 pl-5 pr-5">
+        <h1 class="text-2xl font-bold text-white">Encaminhar para o Pré exames</title>  
+    </section>
+    <form class="flex flex-col justify-start items-center gap-2 w-3/4 lg:w-2/6 h-3/4 p-5 bg-white rounded-lg ml-5" action="../php/encaminharExamePreliminar.php" method="post">
+        <div class="flex flex-col justify-start items-start gap-2 w-10/12">
+            <label for="id_consulta">Id da Consulta:</label>
+            <input class="w-full bg-gray-200 rounded-lg pl-2 h-10" type="text" id="id_consulta" name="id_consulta" required>
+        </div>
+
+        <input class="mt-3 w-2/3 h-10 text-center text-white bg-blue-600 rounded-lg shadow scale-95 hover:scale-100" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
